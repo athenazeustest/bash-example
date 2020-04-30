@@ -11,4 +11,4 @@ steps:
   - wait
    
   - label: "Some other step"
-   command: "sleep 3; echo Step!"
+    command: "sleep 3; echo Step!"
