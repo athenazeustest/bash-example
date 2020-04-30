@@ -4,3 +4,11 @@ steps:
     artifact_paths: "artifacts/*"
     agents:
       queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
+
+  - label: "Some step"
+    command: "sleep 3; echo Step!"
+   
+  - wait
+   
+  - label: "Some other step"
+   command: "sleep 3; echo Step!"
