@@ -19,3 +19,33 @@ steps:
     commands:
       - "touch test > test"
       - "ls"
+
+  - label: "foo"
+    command: "date"
+    
+  - label: "foo"
+    command: "date"
+    
+  - label: "foo"
+    command: "date"
+    
+  - label: "foo"
+    command: "date"
+    
+  - label: "foo"
+    command: "date"
+    
+  - label: "foo"
+    command: "date"
+    
+  - label: "foo"
+    command: "date"
+    
+  - label: "foo"
+    command: "date"
+    
+  - label: "foo"
+    command: "date"
+    
+  - label: "foo"
+    command: "date"
