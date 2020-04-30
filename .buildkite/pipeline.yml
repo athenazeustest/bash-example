@@ -18,4 +18,4 @@ steps:
   - label: "multiple cmds"
     commands:
       - "touch test > test"
-      - "cat test"
+      - "ls"
