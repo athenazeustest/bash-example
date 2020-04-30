@@ -5,10 +5,18 @@ steps:
     agents:
       queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
 
-  - label: "Some step"
-    command: "sleep 3; echo Step!"
+  - label: "prep"
+    command: "pwd; mkdir test"
+    
+  - wait
+
+  - label: "a"
+    command: "sleep 3; whoami; pwd; ls"
+
+  - label: "b"
+    command: "sleep 3; whoami; pwd; ls"
    
   - wait
    
   - label: "Some other step"
-    command: "sleep 3; echo Step!"
+    command: "sleep 3; ls asd; pwd"
