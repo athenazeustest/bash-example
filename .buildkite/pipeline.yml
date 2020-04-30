@@ -11,7 +11,7 @@ steps:
   - wait
    
   - label: "...and its gone"
-    command: "touch test"
+    command: "ls"
     
   - wait
 
